@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Dự đoán Baccarat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Dự đoán Baccarat</h1>
+    <div class="controls">
+      <button class="btn p" onclick="addResult('P')">Player (P)</button>
+      <button class="btn b" onclick="addResult('B')">Banker (B)</button>
+      <button class="btn t" onclick="addResult('T')">Tie (T)</button>
+      <button class="btn r" onclick="resetHistory()">Reset</button>
+    </div>
+    <div class="info">
+      <div id="history" class="history"></div>
+    </div>
+    <div class="predictionBox">
+      <div class="predText">Dự đoán tiếp theo:</div>
+      <div id="prediction" class="prediction">
+        <span id="predicted-label">--</span>
+        <span id="confidence">--</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
